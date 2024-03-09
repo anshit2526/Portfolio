@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
-  return (    
+  return (
     <div className="p-10">
 
       <div className='text-xl flex items-center text-my-theme mb-12'>Work <span className='h-[1px] w-[35dvw] bg-my-theme mx-10 rounded-xl' > </span></div>
 
       <div className='container overflow-y-auto h-[60dvh] my-scrollbar'>
-        <h3 className='text-my-theme text-3xl underline hover:no-underline'>Portfolio Website</h3>
+        <Link to="/"><h3 className='text-my-theme text-3xl underline hover:no-underline'>Portfolio Website</h3></Link>
         <p className='font-light px-5'>One of the projects I have worked on is this Portfolio. I created this portfolio with so much attention to detail and to show my skills and knowledge in coding. Technologies used in this portfolio are HTML, CSS, JavaScript, Tailwind CSS and Rect.js. This portfolio contains my journey as a web developer, Projects I have worked on and my contact information.</p>
         <h5 className='italic px-5 py-1'>Features:</h5>
         <ul className='px-16 font-light list-disc'>
@@ -19,7 +20,7 @@ export default function Projects() {
           <li><strong className="inline font-semibold">Technologies used:</strong> HTML, CSS, Tailwind CSS, React.JS, JavaScript</li>
         </ul>
 
-        <h3 className='text-my-theme text-3xl underline hover:no-underline mt-10'>NewsMania</h3>
+        <Link to='https://github.com/anshit2526/newsapp-react' target='_blank'> <h3 className='text-my-theme text-3xl underline hover:no-underline mt-10'>NewsMania</h3></Link>
         <p className='font-light px-5'>Stay updated with NewsMania a news web app that gives you the latest news across the world of different categories.</p>
         <h5 className='italic px-5 py-1'>Features:</h5>
         <ul className='px-16 font-light list-disc'>
@@ -33,7 +34,7 @@ export default function Projects() {
           <li><strong className="inline font-semibold">Technologies used:</strong> HTML, CSS, Bootstrap CSS, React.JS, JavaScript, NewsAPI</li>
         </ul>
 
-        <h3 className='text-my-theme text-3xl underline hover:no-underline mt-10'>TextUtils</h3>
+        <Link to='https://github.com/anshit2526/textutils-react' target='_blank'> <h3 className='text-my-theme text-3xl underline hover:no-underline mt-10'>TextUtils</h3></Link>
         <p className='font-light px-5'>Get you text ready according to your need. Convert to uppercase, or lowercase, count your words and characters and even see preview of your text.</p>
         <h5 className='italic px-5 py-1'>Features:</h5>
         <ul className='px-16 font-light list-disc'>
