@@ -4,6 +4,7 @@ export default function Contact() {
 
     const [result, setResult] = React.useState("");
 
+    // This code is brought from Web3Forms API.
     const onSubmit = async (event) => {
       event.preventDefault();
       setResult("Sending....");
@@ -28,9 +29,9 @@ export default function Contact() {
     };
 
     return (
-        <div className='p-10'>
-            <div className='text-xl flex items-center text-my-theme mb-8'>Contact <span className='h-[1px] w-[35dvw] bg-my-theme mx-10 rounded-xl' > </span></div>
-                <form onSubmit={onSubmit} name='contact' id='contact' className='flex flex-col border border-my-theme rounded-lg py-2 px-7 w-[50vw] mx-auto'>
+        <div className='m-10 xs:mx-4 mt-10'>
+            <div className='text-xl flex items-center text-my-theme mb-8 xs:text-lg'>Contact <span className='h-[1px] w-[35dvw] bg-my-theme mx-10 rounded-xl xs:w-[80dvw] xs:mx-2' > </span></div>
+                <form onSubmit={onSubmit} name='contact' id='contact' className='flex flex-col border border-my-theme rounded-lg py-2 px-7 w-[50vw] mx-auto xs:w-[80dvw]'>
                     <label htmlFor="name">Name*</label>
                     <input type="text" name='name' id='name' required />
 

@@ -1,0 +1,23 @@
+#blured-background-theme {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    height: 10vh;
+    width: 5vh;
+    border-top-left-radius: 130%;
+    box-shadow: -20px -20px 100px 100px rgba(228, 101, 69, 0.3);
+    z-index: -1;
+    background-color: rgba(228, 101, 69, 0.3);
+}
+
+#blured-background-white {
+    position: absolute;
+    bottom: 0;
+    right:15%;
+    height: 1vh;
+    width: 5vh;
+    border-top-left-radius: 130%;
+    box-shadow: -20px -20px 100px 100px rgba(242, 221, 216, 0.3);
+    z-index: -1;
+    background-color: rgba(249, 226, 220, 0.3);
+}

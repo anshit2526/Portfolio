@@ -15,6 +15,9 @@ module.exports = {
       borderColor: {
         'my-theme': '#E46545'
       },
+      screens: {
+        'xs': {'max':'560px'}
+      }
     },
   },
   plugins: [

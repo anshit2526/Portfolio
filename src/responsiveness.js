@@ -1,49 +1,52 @@
-
+const root = document.getElementById('root')
 function mobileS280(screenSize) {
     if (screenSize.matches) {
-                
+        root.removeAttribute('class');
+        document.getElementById('default-nav').setAttribute('hidden', true)
+        document.getElementById('nav-for-phones').removeAttribute('hidden')
+        document.getElementById('get-in-touch-btn').setAttribute('hidden', true);
     }
 }
 
 function mobileSM320(screenSize) {
     if (screenSize.matches) {
-       
+        root.removeAttribute('class');
     }
 }
 
 function mobileM375(screenSize) {
     if (screenSize.matches) {
-      
+        root.removeAttribute('class');
     }
 }
 
 function mobileML414(screenSize) {
     if (screenSize.matches) {
-       
+        root.removeAttribute('class');
     }
 }
 
 function mobileL430(screenSize) {
     if (screenSize.matches) {
-       
+        root.removeAttribute('class');
     }
 }
 
 function mobileXL720(screenSize) {
     if (screenSize.matches) {
-     
+        root.classList = 'flex'
     }
 }
 
 function tablet1024(screenSize) {
     if (screenSize.matches) {
-        
+        root.classList = 'flex'
     }
 }
 
 function desktop(screenSize) {
     if (screenSize.matches) {
-       
+        root.classList = 'flex'
     }
 }
 
@@ -56,14 +59,6 @@ const screen720 = window.matchMedia('(min-width: 431px) and (max-width: 720px)')
 const screen1024 = window.matchMedia('(min-width: 721px) and (max-width: 1024px)');
 const screenDefault = window.matchMedia('(min-width: 1025px)');
 
-mobileS280(screen280);
-mobileSM320(screen320);
-mobileM375(screen375);
-mobileML414(screen414);
-mobileL430(screen430);
-mobileXL720(screen720);
-tablet1024(screen1024);
-desktop(screenDefault);
 
 window.onresize = () => {
     if (window.outerWidth >= 0 && window.outerWidth <= 280) {
